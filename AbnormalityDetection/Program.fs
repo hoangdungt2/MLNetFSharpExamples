@@ -75,5 +75,6 @@ let pointChart =
 let main argv =
     // combine charts and shows in browser
     Chart.Combine [lineChart;pointChart]
+    |> Chart.withSize (800.,500.)
     |> Chart.Show
     0 // return an integer exit code
